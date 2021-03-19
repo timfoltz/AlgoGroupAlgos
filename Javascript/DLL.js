@@ -24,39 +24,36 @@ class DLList {
             this.head.prev = node;
             this.head = node;
             this.length++;
-        }else{
+        } else {
             this.head = node;
             this.tail = node;
-            this.length++
-
+            this.length++;
         }
         
     }
 
     // pop from tail
     removeTail() {
-        if(this.head == null){
-            return "List is empty"
-        }
-        if(this.head == this.tail){
-        let temp = this.head;
-        this.head = null;
-        this.tail = null;
+        let temp = this.tail;
+        this.tail.prev = this.tail;
+        this.tail.next =null;
+        temp.prev = null;
         return temp;
-        }else{
-            let temp = this.tail;
-            this.tail = this.tail.prev;
-            this.tail.next = null;
-            temp.prev = null;
-            return temp;
-        }
+
+        this.length--
     }
 
     // return is empty
-    isEmpty() {}
+    isEmpty() {
+        if(this.length == 0){
+            return true;
+        } else {return false;}
+    }
 
     // return length
-    size() {}
+    size() {
+        return this.length;
+    }
 
     // == Bonus Methods, just inverted versions of the first set ==
 
