@@ -19,6 +19,7 @@ class DLList {
 
     // push to head
     addHead(node) {
+        let newNode = node
         if(this.head){
             node.next = this.head;
             this.head.prev = node;
@@ -63,3 +64,10 @@ class DLList {
     // pop from head
     removeHead() {}
 }
+
+let newList = new DLList();
+newList.addHead(new DLLNode(15))
+newList.addHead(new DLLNode(4))
+newList.addHead(new DLLNode(67))
+newList.addHead(new DLLNode(100))
+newList.addHead(new DLLNode(2))
