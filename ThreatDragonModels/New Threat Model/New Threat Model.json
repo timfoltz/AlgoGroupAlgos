@@ -1507,19 +1507,10 @@
             }
           }
         ]
-      },
-      {
-        "id": 1,
-        "title": "QOF",
-        "diagramType": "Generic",
-        "placeholder": "New generic diagram description",
-        "thumbnail": "./public/content/images/thumbnail.jpg",
-        "version": "2.2.0",
-        "cells": []
       }
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 13
+    "threatTop": 14
   }
 }
