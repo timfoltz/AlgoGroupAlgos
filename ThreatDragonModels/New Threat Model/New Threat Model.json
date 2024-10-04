@@ -129,19 +129,6 @@
                   "new": false,
                   "number": 6,
                   "score": ""
-                },
-                {
-                  "id": "742159c8-e349-4deb-beeb-c8736bdaabfa",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 8,
-                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -211,19 +198,6 @@
                   "new": false,
                   "number": 11,
                   "score": ""
-                },
-                {
-                  "id": "7ef32930-3f8d-418a-abc1-91b866784697",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 13,
-                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -265,16 +239,16 @@
               "providesAuthentication": false,
               "threats": [
                 {
-                  "id": "41fe185d-842d-4fd2-aded-7bad27513023",
-                  "title": "New STRIDE threat",
+                  "id": "083604de-ef09-4e95-9beb-abadb6bd4867",
+                  "title": "Info Disclosure",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Spoofing",
+                  "type": "Information disclosure",
                   "description": "Provide a description for this threat",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 7,
+                  "modelType": "default",
+                  "new": false,
+                  "number": 15,
                   "score": ""
                 }
               ]
@@ -1090,43 +1064,6 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "2ebc2b8a-5521-4055-94f1-324bb178305a",
-            "source": {
-              "x": 810,
-              "y": 140
-            },
-            "target": {
-              "x": 1020,
-              "y": 120
-            },
-            "vertices": [
-              {
-                "x": 810,
-                "y": 160
-              },
-              {
-                "x": 830,
-                "y": 180
-              },
-              {
-                "x": 990,
-                "y": 160
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -1216,33 +1153,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Backend <--> 3rd Party svcs",
-              "description": "This boundary exists between Hogwarts’ backend server and any third-party services (like payment providers or advertising networks). These external services may process sensitive user information like payment details or user activity.",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "48e652da-4c6e-462f-ad07-ccec20a1705d",
-            "labels": [
-              "Backend <--> 3rd Party svcs"
-            ],
-            "source": {
-              "x": 1050,
-              "y": 180
-            },
-            "target": {
-              "x": 1300,
-              "y": 180
-            },
-            "vertices": []
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
               "name": "App->Backend",
               "description": "This boundary divides the mobile app from the backend server. Data sent from the app, such as login credentials, payment information, or user preferences, needs to be protected in transit.",
               "isTrustBoundary": true,
@@ -1275,6 +1185,73 @@
                 "y": 380
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "User <--> Application",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "2ebc2b8a-5521-4055-94f1-324bb178305a",
+            "source": {
+              "x": 810,
+              "y": 140
+            },
+            "target": {
+              "x": 1020,
+              "y": 120
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": 160
+              },
+              {
+                "x": 830,
+                "y": 180
+              },
+              {
+                "x": 990,
+                "y": 160
+              }
+            ],
+            "labels": [
+              "User <--> Application"
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Backend <--> 3rd Party svcs",
+              "description": "This boundary exists between Hogwarts’ backend server and any third-party services (like payment providers or advertising networks). These external services may process sensitive user information like payment details or user activity.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "48e652da-4c6e-462f-ad07-ccec20a1705d",
+            "labels": [
+              "Backend <--> 3rd Party svcs"
+            ],
+            "source": {
+              "x": 1050,
+              "y": 180
+            },
+            "target": {
+              "x": 1300,
+              "y": 180
+            },
+            "vertices": []
           },
           {
             "position": {
@@ -1511,6 +1488,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 14
+    "threatTop": 15
   }
 }
