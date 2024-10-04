@@ -3,7 +3,7 @@
   "summary": {
     "title": "New Threat Model",
     "owner": "Tim",
-    "description": "",
+    "description": "The mobile app for the Quidditch Olympic Festival interacts with multiple actors and systems, including end-users (attendees), Hogwarts’ backend servers, third-party services (like payment gateways), and administrative users. The app handles sensitive user data, including personal information, payment details, and event preferences, while complying with Magic & Mystics Regulations (MMRs), especially around data deletion requests.",
     "id": 0
   },
   "detail": {
