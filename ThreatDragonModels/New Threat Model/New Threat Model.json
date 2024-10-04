@@ -38,8 +38,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "c485d0cd-6d17-4a28-8521-296ed9567aaf",
             "zIndex": 1,
+            "id": "c485d0cd-6d17-4a28-8521-296ed9567aaf",
             "data": {
               "type": "tm.Actor",
               "name": "End-User\n(Festival Attendee)",
@@ -96,27 +96,62 @@
                 "text": "Application"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
-            "id": "34bbfdb7-b14e-4a18-94bb-aba745d33f5e",
             "zIndex": 2,
+            "id": "34bbfdb7-b14e-4a18-94bb-aba745d33f5e",
             "data": {
               "type": "tm.Process",
               "name": "Application",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "16b67e6b-9383-4fa9-97f5-97c98001b830",
+                  "title": "Data Integrity",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "742159c8-e349-4deb-beeb-c8736bdaabfa",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -133,24 +168,68 @@
                 "text": "Hogwarts Admin"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
-            "id": "34588544-9853-4b1d-936a-377a0c49ad33",
             "zIndex": 3,
+            "id": "34588544-9853-4b1d-936a-377a0c49ad33",
             "data": {
               "type": "tm.Actor",
               "name": "Hogwarts Admin",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "9ff71b64-f694-439e-9b28-501d11cc5df1",
+                  "title": "Privilege Escalation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Unauthorized users gaining admin-level access",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "9ff71b64-f694-439e-9b28-501d11cc5df1",
+                  "title": "Unauthorized Modifications",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "An attacker modifying VIP levels, deleting data, or changing schedules.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "7ef32930-3f8d-418a-abc1-91b866784697",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "repudiation": 2
+              }
             }
           },
           {
@@ -167,24 +246,38 @@
                 "text": "Third-Party Services"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
-            "id": "8548035e-545d-4b9f-a9d9-134df2ab41a7",
             "zIndex": 4,
+            "id": "8548035e-545d-4b9f-a9d9-134df2ab41a7",
             "data": {
               "type": "tm.Actor",
               "name": "Third-Party Services",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "41fe185d-842d-4fd2-aded-7bad27513023",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 7,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -211,8 +304,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "6bdeeb4c-5dc4-4675-a6e2-b4c3cea26d5d",
             "zIndex": 6,
+            "id": "6bdeeb4c-5dc4-4675-a6e2-b4c3cea26d5d",
             "data": {
               "type": "tm.Store",
               "name": "User Database",
@@ -249,8 +342,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "52eba143-3d81-4d53-9f0f-fdc8544f192d",
             "zIndex": 7,
+            "id": "52eba143-3d81-4d53-9f0f-fdc8544f192d",
             "data": {
               "type": "tm.Process",
               "name": "Backend",
@@ -297,15 +390,15 @@
               "threats": []
             },
             "id": "abe8cbef-ef3a-4fac-a369-427288029be9",
+            "labels": [
+              "Login"
+            ],
             "source": {
               "cell": "34bbfdb7-b14e-4a18-94bb-aba745d33f5e"
             },
             "target": {
               "cell": "c485d0cd-6d17-4a28-8521-296ed9567aaf"
-            },
-            "labels": [
-              "Login"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -339,15 +432,15 @@
               "threats": []
             },
             "id": "8f15eafc-4e3c-4fc4-b48a-1d13807a2674",
+            "labels": [
+              "Login/Authentication"
+            ],
             "source": {
               "cell": "05e8592d-a923-4355-96c3-b72f8c68cb1d"
             },
             "target": {
               "cell": "34bbfdb7-b14e-4a18-94bb-aba745d33f5e"
-            },
-            "labels": [
-              "Login/Authentication"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -381,16 +474,16 @@
               "threats": []
             },
             "id": "ce87271d-320d-4c35-8f15-89d2204a1bae",
+            "labels": [
+              "Purchase Tickets"
+            ],
             "source": {
               "cell": "34bbfdb7-b14e-4a18-94bb-aba745d33f5e"
             },
             "target": {
               "cell": "8548035e-545d-4b9f-a9d9-134df2ab41a7"
             },
-            "vertices": [],
-            "labels": [
-              "Purchase Tickets"
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -424,15 +517,15 @@
               "threats": []
             },
             "id": "d7755699-b757-44e5-ae7c-a4bc707b5f8f",
+            "labels": [
+              "User Payment Data"
+            ],
             "source": {
               "cell": "d3b14bd7-3c83-4862-be2e-3f4608b2dade"
             },
             "target": {
               "cell": "f3edee31-09c8-4293-99d9-2f3b4003c9bb"
-            },
-            "labels": [
-              "User Payment Data"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -505,15 +598,15 @@
               "threats": []
             },
             "id": "97d0a68e-c27d-4622-b7cd-a1028e8d1795",
+            "labels": [
+              "Event updates"
+            ],
             "source": {
               "cell": "52eba143-3d81-4d53-9f0f-fdc8544f192d"
             },
             "target": {
               "cell": "01533097-6617-4df1-b15a-9bacd0db5a9f"
-            },
-            "labels": [
-              "Event updates"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -547,15 +640,15 @@
               "threats": []
             },
             "id": "18cb8acd-75b4-4e72-b5d3-86c79747464a",
+            "labels": [
+              "Events/Updates"
+            ],
             "source": {
               "cell": "01533097-6617-4df1-b15a-9bacd0db5a9f"
             },
             "target": {
               "cell": "0583996f-02a1-4119-96e3-b222ef38b681"
-            },
-            "labels": [
-              "Events/Updates"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -589,15 +682,15 @@
               "threats": []
             },
             "id": "029a4d3c-4e25-44d7-a01b-a6bd7639669e",
+            "labels": [
+              "User data"
+            ],
             "source": {
               "cell": "6bdeeb4c-5dc4-4675-a6e2-b4c3cea26d5d"
             },
             "target": {
               "cell": "52eba143-3d81-4d53-9f0f-fdc8544f192d"
             },
-            "labels": [
-              "User data"
-            ],
             "vertices": [
               {
                 "x": 450,
@@ -637,16 +730,16 @@
               "threats": []
             },
             "id": "24de8229-418c-4cb6-931e-b0e0f2d23d55",
+            "labels": [
+              "Push updates"
+            ],
             "source": {
               "cell": "01533097-6617-4df1-b15a-9bacd0db5a9f"
             },
             "target": {
               "cell": "34bbfdb7-b14e-4a18-94bb-aba745d33f5e"
             },
-            "vertices": [],
-            "labels": [
-              "Push updates"
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -719,15 +812,15 @@
               "threats": []
             },
             "id": "f4e7bf5c-9b3e-45b6-8c81-0f30d618f2fe",
+            "labels": [
+              "User Data\nDelete Request"
+            ],
             "source": {
               "cell": "34bbfdb7-b14e-4a18-94bb-aba745d33f5e"
             },
             "target": {
               "cell": "5f7d383b-2226-459d-b3c0-549df84df8b1"
-            },
-            "labels": [
-              "User Data\nDelete Request"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -761,15 +854,15 @@
               "threats": []
             },
             "id": "74e587fd-52ea-4119-b91c-eb641cf1a280",
+            "labels": [
+              "Delete Command"
+            ],
             "source": {
               "cell": "6bdeeb4c-5dc4-4675-a6e2-b4c3cea26d5d"
             },
             "target": {
               "cell": "5f7d383b-2226-459d-b3c0-549df84df8b1"
-            },
-            "labels": [
-              "Delete Command"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -803,15 +896,15 @@
               "threats": []
             },
             "id": "ec36b38c-1e11-4b2d-be0c-ee0eb9bc7393",
+            "labels": [
+              "User Data\nDelete Request"
+            ],
             "source": {
               "cell": "5f7d383b-2226-459d-b3c0-549df84df8b1"
             },
             "target": {
               "cell": "8548035e-545d-4b9f-a9d9-134df2ab41a7"
-            },
-            "labels": [
-              "User Data\nDelete Request"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -845,15 +938,15 @@
               "threats": []
             },
             "id": "1e6df427-5b0d-4f09-bfd0-9c73b5651586",
+            "labels": [
+              "Delete Command"
+            ],
             "source": {
               "cell": "8548035e-545d-4b9f-a9d9-134df2ab41a7"
             },
             "target": {
               "cell": "f3edee31-09c8-4293-99d9-2f3b4003c9bb"
             },
-            "labels": [
-              "Delete Command"
-            ],
             "vertices": [
               {
                 "x": 1120,
@@ -901,6 +994,102 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Get User Login Info",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "79f1a406-8a32-4056-92d7-554c706dded5",
+            "labels": [
+              "Get User Login Info"
+            ],
+            "source": {
+              "cell": "05e8592d-a923-4355-96c3-b72f8c68cb1d"
+            },
+            "target": {
+              "cell": "6bdeeb4c-5dc4-4675-a6e2-b4c3cea26d5d"
+            },
+            "vertices": [
+              {
+                "x": 760,
+                "y": 380
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Changes\nto App",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "07cd8032-891c-498c-a97a-5a68e24a0e16",
+            "labels": [
+              "Changes\nto App"
+            ],
+            "source": {
+              "cell": "52eba143-3d81-4d53-9f0f-fdc8544f192d"
+            },
+            "target": {
+              "cell": "34bbfdb7-b14e-4a18-94bb-aba745d33f5e"
+            },
+            "vertices": [
+              {
+                "x": 760,
+                "y": 280.5
+              }
+            ]
+          },
+          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -946,7 +1135,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
+                  "name": ""
                 },
                 "strokeDasharray": null
               }
@@ -957,81 +1146,94 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Get User Login Info",
+              "name": "Payment Information",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": true,
+              "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
             },
-            "id": "79f1a406-8a32-4056-92d7-554c706dded5",
-            "source": {
-              "cell": "05e8592d-a923-4355-96c3-b72f8c68cb1d"
-            },
-            "target": {
-              "cell": "6bdeeb4c-5dc4-4675-a6e2-b4c3cea26d5d"
-            },
-            "vertices": [
-              {
-                "x": 760,
-                "y": 380
-              }
-            ],
-            "labels": [
-              "Get User Login Info"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Changes\nto App",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "07cd8032-891c-498c-a97a-5a68e24a0e16",
+            "id": "056ced24-0ee5-4698-95e0-084af3888fd1",
             "source": {
               "cell": "52eba143-3d81-4d53-9f0f-fdc8544f192d"
             },
             "target": {
-              "cell": "34bbfdb7-b14e-4a18-94bb-aba745d33f5e"
+              "cell": "8548035e-545d-4b9f-a9d9-134df2ab41a7"
             },
             "vertices": [
               {
-                "x": 760,
-                "y": 280.5
+                "x": 750,
+                "y": 90
+              },
+              {
+                "x": 870,
+                "y": 30
+              },
+              {
+                "x": 1030,
+                "y": 60
               }
             ],
             "labels": [
-              "Changes\nto App"
+              "Payment Information"
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Admin <--> Backend",
+              "description": "This boundary separates the admin users (who manage the system and have control over data) from the backend server. Admins need access to sensitive data (like deletion requests or ticket information), so this area must be heavily controlled.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "73f0207f-9c91-4903-b516-509dd4d5ca33",
+            "source": {
+              "x": 540,
+              "y": 200
+            },
+            "target": {
+              "x": 490,
+              "y": 360
+            },
+            "labels": [
+              "Admin <--> Backend"
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Backend <--> 3rd Party svcs",
+              "description": "This boundary exists between Hogwarts’ backend server and any third-party services (like payment providers or advertising networks). These external services may process sensitive user information like payment details or user activity.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "48e652da-4c6e-462f-ad07-ccec20a1705d",
+            "source": {
+              "x": 1050,
+              "y": 180
+            },
+            "target": {
+              "x": 1300,
+              "y": 180
+            },
+            "labels": [
+              "Backend <--> 3rd Party svcs"
+            ],
+            "vertices": []
           },
           {
             "shape": "trust-boundary-curve",
@@ -1046,12 +1248,15 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "threatFrequency": {
-                "tampering": 3,
+                "tampering": 14,
                 "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },
             "id": "106df318-2587-43f2-b157-7aca0e8fe9ae",
+            "labels": [
+              "App->Backend"
+            ],
             "source": {
               "x": 810,
               "y": 200
@@ -1060,13 +1265,14 @@
               "x": 980,
               "y": 380
             },
-            "labels": [
-              "App->Backend"
-            ],
             "vertices": [
               {
                 "x": 840,
                 "y": 340
+              },
+              {
+                "x": 960,
+                "y": 380
               }
             ]
           },
@@ -1091,8 +1297,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "05e8592d-a923-4355-96c3-b72f8c68cb1d",
             "zIndex": 11,
+            "id": "05e8592d-a923-4355-96c3-b72f8c68cb1d",
             "data": {
               "type": "tm.Process",
               "name": "Authentication/\nRegistration",
@@ -1128,8 +1334,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "d3b14bd7-3c83-4862-be2e-3f4608b2dade",
             "zIndex": 12,
+            "id": "d3b14bd7-3c83-4862-be2e-3f4608b2dade",
             "data": {
               "type": "tm.Process",
               "name": "Payment",
@@ -1165,8 +1371,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "5f7d383b-2226-459d-b3c0-549df84df8b1",
             "zIndex": 13,
+            "id": "5f7d383b-2226-459d-b3c0-549df84df8b1",
             "data": {
               "type": "tm.Process",
               "name": "Data Deletion",
@@ -1202,8 +1408,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "01533097-6617-4df1-b15a-9bacd0db5a9f",
             "zIndex": 14,
+            "id": "01533097-6617-4df1-b15a-9bacd0db5a9f",
             "data": {
               "type": "tm.Process",
               "name": "Schedule\nUpdate",
@@ -1242,8 +1448,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "0583996f-02a1-4119-96e3-b222ef38b681",
             "zIndex": 15,
+            "id": "0583996f-02a1-4119-96e3-b222ef38b681",
             "data": {
               "type": "tm.Store",
               "name": "Event Database",
@@ -1283,8 +1489,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "f3edee31-09c8-4293-99d9-2f3b4003c9bb",
             "zIndex": 16,
+            "id": "f3edee31-09c8-4293-99d9-2f3b4003c9bb",
             "data": {
               "type": "tm.Store",
               "name": "Third-Party Data",
@@ -1305,6 +1511,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 13
   }
 }
