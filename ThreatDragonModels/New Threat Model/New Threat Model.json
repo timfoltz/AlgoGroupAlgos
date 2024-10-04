@@ -1158,6 +1158,9 @@
               "threats": []
             },
             "id": "056ced24-0ee5-4698-95e0-084af3888fd1",
+            "labels": [
+              "Payment Information"
+            ],
             "source": {
               "cell": "52eba143-3d81-4d53-9f0f-fdc8544f192d"
             },
@@ -1177,9 +1180,6 @@
                 "x": 1030,
                 "y": 60
               }
-            ],
-            "labels": [
-              "Payment Information"
             ]
           },
           {
@@ -1196,6 +1196,9 @@
               "hasOpenThreats": false
             },
             "id": "73f0207f-9c91-4903-b516-509dd4d5ca33",
+            "labels": [
+              "Admin <--> Backend"
+            ],
             "source": {
               "x": 540,
               "y": 200
@@ -1203,10 +1206,7 @@
             "target": {
               "x": 490,
               "y": 360
-            },
-            "labels": [
-              "Admin <--> Backend"
-            ]
+            }
           },
           {
             "shape": "trust-boundary-curve",
@@ -1222,6 +1222,9 @@
               "hasOpenThreats": false
             },
             "id": "48e652da-4c6e-462f-ad07-ccec20a1705d",
+            "labels": [
+              "Backend <--> 3rd Party svcs"
+            ],
             "source": {
               "x": 1050,
               "y": 180
@@ -1230,9 +1233,6 @@
               "x": 1300,
               "y": 180
             },
-            "labels": [
-              "Backend <--> 3rd Party svcs"
-            ],
             "vertices": []
           },
           {
