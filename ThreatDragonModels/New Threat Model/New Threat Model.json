@@ -123,7 +123,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
+                  "description": "If information is not secure, or there are no restrictions on who can view it the application could leak personal information to users it does not intend",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -135,7 +135,7 @@
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
@@ -231,8 +231,8 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Because the owner of the application does not control TPS, these services could leak information to hackers",
+                  "mitigation": "Limit the amount of information the TPS has and can gain access to. Only give them minimal info to do what they need.",
                   "modelType": "default",
                   "new": false,
                   "number": 15,
