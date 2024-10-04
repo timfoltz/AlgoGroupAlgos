@@ -47,7 +47,7 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
-              "providesAuthentication": false,
+              "providesAuthentication": true,
               "threats": [
                 {
                   "id": "54c1a6e4-887d-4ef5-9316-8a9315518137",
