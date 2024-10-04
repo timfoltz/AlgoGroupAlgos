@@ -68,7 +68,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Repudiation",
-                  "description": "Provide a description for this threat",
+                  "description": "Information could be mistakenly delivered to someone other than the intended user",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -78,7 +78,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "repudiation": 1
+                "repudiation": 2
               }
             }
           },
@@ -174,29 +174,16 @@
               "providesAuthentication": false,
               "threats": [
                 {
-                  "id": "9ff71b64-f694-439e-9b28-501d11cc5df1",
+                  "id": "8eb661b9-a79f-4ed4-9a86-4021d690f677",
                   "title": "Privilege Escalation",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Repudiation",
-                  "description": "Unauthorized users gaining admin-level access",
+                  "description": "Unauthorized users gaining admin-level access.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
+                  "modelType": "default",
                   "new": false,
-                  "number": 11,
-                  "score": ""
-                },
-                {
-                  "id": "9ff71b64-f694-439e-9b28-501d11cc5df1",
-                  "title": "Unauthorized Modifications",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Repudiation",
-                  "description": "An attacker modifying VIP levels, deleting data, or changing schedules.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 11,
+                  "number": 16,
                   "score": ""
                 }
               ],
@@ -1200,6 +1187,9 @@
               "hasOpenThreats": false
             },
             "id": "2ebc2b8a-5521-4055-94f1-324bb178305a",
+            "labels": [
+              "User <--> Application"
+            ],
             "source": {
               "x": 810,
               "y": 140
@@ -1221,9 +1211,6 @@
                 "x": 990,
                 "y": 160
               }
-            ],
-            "labels": [
-              "User <--> Application"
             ]
           },
           {
@@ -1267,6 +1254,9 @@
               "hasOpenThreats": false
             },
             "id": "af68047d-647c-4736-849d-af1fa97018e9",
+            "labels": [
+              "App <--> TPS"
+            ],
             "source": {
               "x": 1000,
               "y": 220
@@ -1274,10 +1264,7 @@
             "target": {
               "x": 1000,
               "y": 370
-            },
-            "labels": [
-              "App <--> TPS"
-            ]
+            }
           },
           {
             "position": {
@@ -1293,8 +1280,8 @@
                 "text": "Authentication/\nRegistration"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1308,12 +1295,26 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2bd0af78-e53e-4d46-aa35-1cf9c91edfc7",
+                  "title": "Spoofing User Cred",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Gaining access to the user credentials through tokens or other means",
+                  "mitigation": "Make tokens expire and invalidate them on logout",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1514,6 +1515,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 15
+    "threatTop": 17
   }
 }
