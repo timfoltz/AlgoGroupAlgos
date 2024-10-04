@@ -1254,6 +1254,32 @@
             "vertices": []
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "App <--> TPS",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "af68047d-647c-4736-849d-af1fa97018e9",
+            "source": {
+              "x": 1000,
+              "y": 220
+            },
+            "target": {
+              "x": 1000,
+              "y": 370
+            },
+            "labels": [
+              "App <--> TPS"
+            ]
+          },
+          {
             "position": {
               "x": 570,
               "y": 90
